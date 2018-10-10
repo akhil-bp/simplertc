@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>MyFirst app</title>
+        <link rel="stylesheet" type="text/css" href="/easyrtc/easyrtc.css" />
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="/easyrtc/easyrtc.js"></script>
+        <script type="text/javascript" src="client.js"></script>
+        <style>
+            video {
+                     width:320px;
+                     height:240px;
+                  }
+            .divHolder {
+                  position:relative;
+                  float:left;                   
+                  margin: 1px;
+                  }
+        </style>
+    </head>
+    <body onload="my_init()">
+        <div id="otherClients"> </div>
+        <div id="no_users_online"> </div>
+        <video style="float:left" id="self" width="300" height="200"></video>
+        <video style="float:left" id="caller" width="300" height="200"></video>
+    </body>
+</html>
